@@ -1,3 +1,3 @@
-# bankdash
+# BankDash
 
 A new Flutter project.
