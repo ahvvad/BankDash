@@ -1,5 +1,6 @@
 import 'package:bankdash/dashboard/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const BankDash());
@@ -10,9 +11,12 @@ class BankDash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'BankDash',
-      home: DashboardView(),
+      theme: ThemeData(
+        textTheme: GoogleFonts.interTextTheme(),
+      ),
+      home: const DashboardView(),
     );
   }
 }
