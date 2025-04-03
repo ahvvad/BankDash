@@ -42,6 +42,7 @@ dependencies:
   flutter_svg: ^2.0.17
   # For handling the responsive layout
   device_preview: ^1.2.0
+  flutter_native_splash: ^2.4.4
 
 dev_dependencies:
   flutter_test:
