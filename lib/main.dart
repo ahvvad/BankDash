@@ -1,3 +1,4 @@
+import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,6 +15,7 @@ class BankDash extends StatelessWidget {
     return MaterialApp(
       title: 'BankDash',
       theme: ThemeData(
+        scaffoldBackgroundColor: ColorsManager.bgColor,
         textTheme: GoogleFonts.interTextTheme(),
       ),
       home: const DashboardView(),

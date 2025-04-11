@@ -57,4 +57,8 @@ class AppImages {
   //? Icons assets
   // logo = Logo.svg
   static const String logo = 'assets/images/Logo.svg';
+  // logo2 = Logo2.svg
+  static const String logo2 = 'assets/images/Logo2.svg';
+
+  static const String logo3 = 'assets/images/Logo2.png';
 }
