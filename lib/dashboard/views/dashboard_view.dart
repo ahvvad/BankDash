@@ -1,5 +1,7 @@
 import 'package:bankdash/dashboard/widgets/adaptive_layout_widget.dart';
 import 'package:bankdash/dashboard/widgets/dashboard_desktop_layout.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_mobile_layout.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_tablet_layout.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -9,8 +11,8 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AdaptiveLayout(
-        mobileLayout: (context) => const SizedBox(),
-        tabletLayout: (context) => const SizedBox(),
+        mobileLayout: (context) => const DashboardMobileLayout(),
+        tabletLayout: (context) => const DashboardTabletLayout(),
         desktopLayout: (context) => const DashboardDesktopLayout(),
       ),
     );
