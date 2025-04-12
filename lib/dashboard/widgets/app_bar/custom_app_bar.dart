@@ -1,10 +1,11 @@
 import 'package:bankdash/dashboard/utils/app_images.dart';
+import 'package:bankdash/dashboard/utils/app_message.dart';
 import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/utils/styles.dart';
+import 'package:bankdash/dashboard/widgets/app_bar/custom_searsh_bar.dart';
 import 'package:bankdash/dashboard/widgets/app_bar/rounded_icons_container.dart';
 import 'package:bankdash/dashboard/widgets/app_bar/rounded_image_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -41,20 +42,24 @@ class CustomAppBar extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      CustomSearshBar(),
-                      SizedBox(width: 30),
+                      const CustomSearshBar(),
+                      const SizedBox(width: 30),
                       RoundedIconsContainer(
+                        onTap: () => CustomToast.showFeatureInDevelopment(),
                         svgImage: AppImages.settings,
                       ),
-                      SizedBox(width: 30),
+                      const SizedBox(width: 30),
                       RoundedIconsContainer(
+                        onTap: () => CustomToast.showFeatureInDevelopment(),
                         svgImage: AppImages.notification,
                       ),
-                      SizedBox(width: 30),
-                      RoundedImageContainer(image: AppImages.user1)
+                      const SizedBox(width: 30),
+                      RoundedImageContainer(
+                          onTap: () => CustomToast.showFeatureInDevelopment(),
+                          image: AppImages.user1)
                     ],
                   )
                 ],
@@ -63,46 +68,6 @@ class CustomAppBar extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class CustomSearshBar extends StatelessWidget {
-  const CustomSearshBar({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 300,
-      child: TextField(
-        style: TextStyles.font15Regular.copyWith(
-          color: ColorsManager.mainBlue,
-        ),
-        cursorColor: ColorsManager.mainBlue,
-        decoration: InputDecoration(
-          filled: true,
-          fillColor: ColorsManager.bgColor,
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(100),
-            borderSide: const BorderSide(color: ColorsManager.bgColor),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(100),
-            borderSide: const BorderSide(color: ColorsManager.bgColor),
-          ),
-          prefixIcon: SvgPicture.asset(
-            AppImages.search,
-            fit: BoxFit.scaleDown,
-            alignment: Alignment.center,
-          ),
-          hintText: 'Search for something',
-          hintStyle: TextStyles.font15Regular.copyWith(
-            color: ColorsManager.secondaryTxtColor,
-          ),
-        ),
-      ),
     );
   }
 }

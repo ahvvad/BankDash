@@ -42,7 +42,10 @@ dependencies:
   flutter_svg: ^2.0.17
   # For handling the responsive layout
   device_preview: ^1.2.0
+  # For native splash screen
   flutter_native_splash: ^2.4.4
+  # For toast messages
+  fluttertoast: ^8.2.12
 
 dev_dependencies:
   flutter_test:
