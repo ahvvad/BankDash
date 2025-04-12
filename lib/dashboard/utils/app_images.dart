@@ -54,11 +54,19 @@ class AppImages {
   // wallet = wallet.svg
   static const String wallet = 'assets/icons/wallet.svg';
 
-  //? Icons assets
+  //? Images assets
   // logo = Logo.svg
   static const String logo = 'assets/images/Logo.svg';
-  // logo2 = Logo2.svg
-  static const String logo2 = 'assets/images/Logo2.svg';
 
-  static const String logo3 = 'assets/images/Logo2.png';
+  // user1 = user1.png
+  static const String user1 = 'assets/images/user1.png';
+
+  // user2 = user2.png
+  static const String user2 = 'assets/images/user2.png';
+
+  // user3 = user3.png
+  static const String user3 = 'assets/images/user3.png';
+
+  // user4 = user4.png
+  static const String user4 = 'assets/images/user4.png';
 }

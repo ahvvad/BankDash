@@ -1,5 +1,4 @@
 import 'package:bankdash/dashboard/utils/app_images.dart';
-import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/widgets/drawer/drawer_items_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

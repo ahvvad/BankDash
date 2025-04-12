@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class TextStyles {
   // SemiBold Font
-  static TextStyle font24SemiBold = const TextStyle(
+  static TextStyle font28SemiBold = const TextStyle(
     fontWeight: FontWeightHelper.semiBold,
     fontSize: 28,
   );

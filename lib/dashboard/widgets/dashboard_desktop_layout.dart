@@ -1,3 +1,4 @@
+import 'package:bankdash/dashboard/widgets/dashboard_body.dart';
 import 'package:bankdash/dashboard/widgets/drawer/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -6,16 +7,19 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        const Expanded(
-          child: CustomDrawer(),
-        ),
-        Expanded(
-          flex: 4,
-          child: Container(),
-        ),
-      ],
+    return GestureDetector(
+      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+      child: const Row(
+        children: [
+          Expanded(
+            child: CustomDrawer(),
+          ),
+          Expanded(
+            flex: 4,
+            child: DashboardBody(),
+          ),
+        ],
+      ),
     );
   }
 }
