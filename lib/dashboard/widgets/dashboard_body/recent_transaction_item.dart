@@ -26,18 +26,19 @@ class RecentTransactionItem extends StatelessWidget {
             child: SvgPicture.asset(recentTransactionModel.image),
           ),
           title: Text(
+            overflow: TextOverflow.fade,
             recentTransactionModel.title,
-            style: TextStyles.font13SemiBold
+            style: TextStyles.font13SemiBold(context)
                 .copyWith(color: ColorsManager.primaryTxtColor),
           ),
           subtitle: Text(
             recentTransactionModel.date,
-            style: TextStyles.font11Regular
+            style: TextStyles.font11Regular(context)
                 .copyWith(color: ColorsManager.secondaryTxtColor),
           ),
           trailing: Text(
             recentTransactionModel.amount,
-            style: TextStyles.font11SemiBold.copyWith(
+            style: TextStyles.font11SemiBold(context).copyWith(
               color: recentTransactionModel.isWithdrawal
                   ? ColorsManager.pink
                   : ColorsManager.teal,

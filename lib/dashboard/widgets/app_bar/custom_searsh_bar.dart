@@ -15,7 +15,7 @@ class CustomSearshBar extends StatelessWidget {
     return SizedBox(
       width: 300,
       child: TextField(
-        style: TextStyles.font15Regular.copyWith(
+        style: TextStyles.font15Regular(context).copyWith(
           color: ColorsManager.mainBlue,
         ),
         cursorColor: ColorsManager.mainBlue,
@@ -36,7 +36,7 @@ class CustomSearshBar extends StatelessWidget {
             alignment: Alignment.center,
           ),
           hintText: 'Search for something',
-          hintStyle: TextStyles.font15Regular.copyWith(
+          hintStyle: TextStyles.font15Regular(context).copyWith(
             color: ColorsManager.secondaryTxtColor,
           ),
         ),

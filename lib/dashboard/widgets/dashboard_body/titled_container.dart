@@ -20,7 +20,7 @@ class TitledContainer extends StatelessWidget {
       children: [
         Text(
           title,
-          style: TextStyles.font18SemiBold.copyWith(
+          style: TextStyles.font18SemiBold(context).copyWith(
             color: ColorsManager.primaryTxtColor,
           ),
         ),

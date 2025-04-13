@@ -63,13 +63,13 @@ class MyCard extends StatelessWidget {
                       children: [
                         Text(
                           'Balance',
-                          style: TextStyles.font11Regular.copyWith(
+                          style: TextStyles.font11Regular(context).copyWith(
                             color: labelColor,
                           ),
                         ),
                         Text(
                           r'$5,756',
-                          style: TextStyles.font18Medium.copyWith(
+                          style: TextStyles.font18Medium(context).copyWith(
                             color: textColor,
                           ),
                         ),
@@ -92,13 +92,13 @@ class MyCard extends StatelessWidget {
                       children: [
                         Text(
                           'CARD HOLDER',
-                          style: TextStyles.font11Regular.copyWith(
+                          style: TextStyles.font11Regular(context).copyWith(
                             color: labelColor,
                           ),
                         ),
                         Text(
                           'Eddy Cusuma',
-                          style: TextStyles.font18Medium.copyWith(
+                          style: TextStyles.font18Medium(context).copyWith(
                             color: textColor,
                           ),
                         ),
@@ -109,13 +109,13 @@ class MyCard extends StatelessWidget {
                       children: [
                         Text(
                           'VALID THRU',
-                          style: TextStyles.font11Regular.copyWith(
+                          style: TextStyles.font11Regular(context).copyWith(
                             color: labelColor,
                           ),
                         ),
                         Text(
                           '12/12',
-                          style: TextStyles.font18Medium.copyWith(
+                          style: TextStyles.font18Medium(context).copyWith(
                             color: textColor,
                           ),
                         ),
@@ -134,7 +134,7 @@ class MyCard extends StatelessWidget {
                     children: [
                       Text(
                         '3778 **** **** 1234',
-                        style: TextStyles.font18Medium.copyWith(
+                        style: TextStyles.font18Medium(context).copyWith(
                           color: textColor,
                         ),
                       ),

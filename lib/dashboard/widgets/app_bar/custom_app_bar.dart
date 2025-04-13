@@ -37,7 +37,7 @@ class CustomAppBar extends StatelessWidget {
                     fit: BoxFit.scaleDown,
                     child: Text(
                       'Overview',
-                      style: TextStyles.font28SemiBold.copyWith(
+                      style: TextStyles.font28SemiBold(context).copyWith(
                         color: ColorsManager.primaryTxtColor,
                       ),
                     ),

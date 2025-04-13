@@ -30,7 +30,7 @@ class InActiveDrawerItem extends StatelessWidget {
           const SizedBox(width: 12),
           Text(
             drawerItemModel.title,
-            style: TextStyles.font16Medium.copyWith(
+            style: TextStyles.font16Medium(context).copyWith(
               color: ColorsManager.inactiveTxtColor,
             ),
           ),
@@ -78,7 +78,7 @@ class ActiveDrawerItem extends StatelessWidget {
           const SizedBox(width: 12),
           Text(
             drawerItemModel.title,
-            style: TextStyles.font16Medium.copyWith(
+            style: TextStyles.font16Medium(context).copyWith(
               color: ColorsManager.mainBlue,
             ),
           ),
