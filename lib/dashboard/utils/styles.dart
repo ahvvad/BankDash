@@ -15,6 +15,10 @@ class TextStyles {
     fontWeight: FontWeightHelper.semiBold,
     fontSize: 20,
   );
+  static TextStyle font18SemiBold = const TextStyle(
+    fontWeight: FontWeightHelper.semiBold,
+    fontSize: 18,
+  );
 
   // Medium Font
   static TextStyle font18Medium = const TextStyle(
@@ -38,6 +42,10 @@ class TextStyles {
   static TextStyle font15Regular = const TextStyle(
     fontWeight: FontWeightHelper.regular,
     fontSize: 15,
+  );
+  static TextStyle font11Regular = const TextStyle(
+    fontWeight: FontWeightHelper.regular,
+    fontSize: 11,
   );
 
   // Light Font

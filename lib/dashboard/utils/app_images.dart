@@ -3,6 +3,10 @@ class AppImages {
   // chipCard = chip_card.svg
   static const String chipCard = 'assets/icons/chip_card.svg';
 
+  static const String chipCardpng = 'assets/icons/Chip_Card.png';
+
+  static const String chipCard2 = 'assets/icons/chipCard.svg';
+
   // creditCard = credit_card.svg
   static const String creditCard = 'assets/icons/credit_card.svg';
 
