@@ -1,4 +1,4 @@
-import 'package:bankdash/dashboard/widgets/dashboard_body.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/dashboard_body.dart';
 import 'package:bankdash/dashboard/widgets/drawer/custom_drawer.dart';
 import 'package:flutter/material.dart';
 

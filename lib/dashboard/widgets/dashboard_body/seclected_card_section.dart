@@ -1,4 +1,4 @@
-import 'package:bankdash/dashboard/widgets/active_inactive_card.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/active_inactive_card.dart';
 import 'package:flutter/material.dart';
 
 class SelectedCardSection extends StatelessWidget {

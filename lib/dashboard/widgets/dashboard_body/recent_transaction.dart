@@ -1,5 +1,5 @@
-import 'package:bankdash/dashboard/widgets/recent_transaction_model_list_view.dart';
-import 'package:bankdash/dashboard/widgets/titled_container.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/recent_transaction_model_list_view.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/titled_container.dart';
 import 'package:flutter/material.dart';
 
 class RecentTransaction extends StatelessWidget {

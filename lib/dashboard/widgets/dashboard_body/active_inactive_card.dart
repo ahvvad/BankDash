@@ -1,7 +1,7 @@
 import 'package:bankdash/dashboard/utils/app_images.dart';
 import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/utils/styles.dart';
-import 'package:bankdash/dashboard/widgets/titled_container.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/titled_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

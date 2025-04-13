@@ -1,7 +1,7 @@
 import 'package:bankdash/dashboard/models/recent_transaction_model.dart';
 import 'package:bankdash/dashboard/utils/app_images.dart';
 import 'package:bankdash/dashboard/utils/colors.dart';
-import 'package:bankdash/dashboard/widgets/recent_transaction_item.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/recent_transaction_item.dart';
 import 'package:flutter/material.dart';
 
 class RecentTransactionModelListView extends StatelessWidget {
