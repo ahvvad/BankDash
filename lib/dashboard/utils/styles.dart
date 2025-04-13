@@ -19,8 +19,24 @@ class TextStyles {
     fontWeight: FontWeightHelper.semiBold,
     fontSize: 18,
   );
+  static TextStyle font13SemiBold = const TextStyle(
+    fontWeight: FontWeightHelper.semiBold,
+    fontSize: 13,
+  );
+  static TextStyle font11SemiBold = const TextStyle(
+    fontWeight: FontWeightHelper.semiBold,
+    fontSize: 11,
+  );
 
   // Medium Font
+  static TextStyle font11Medium = const TextStyle(
+    fontWeight: FontWeightHelper.medium,
+    fontSize: 11,
+  );
+  static TextStyle font13Medium = const TextStyle(
+    fontWeight: FontWeightHelper.medium,
+    fontSize: 13,
+  );
   static TextStyle font18Medium = const TextStyle(
     fontWeight: FontWeightHelper.medium,
     fontSize: 18,

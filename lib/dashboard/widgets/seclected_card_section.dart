@@ -9,6 +9,7 @@ class SelectedCardSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Expanded(
+      flex: 2,
       child: Row(
         children: [
           Expanded(child: ActiveCard()),
