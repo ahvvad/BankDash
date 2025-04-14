@@ -3,6 +3,20 @@ import 'package:bankdash/dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class TextStyles {
+  // Bold Font
+  static TextStyle font16Bold(BuildContext context) {
+    return TextStyle(
+      fontWeight: FontWeightHelper.semiBold,
+      fontSize: getResponsiveFontSize(context, fontSize: 16),
+    );
+  }
+  static TextStyle font13Bold(BuildContext context) {
+    return TextStyle(
+      fontWeight: FontWeightHelper.semiBold,
+      fontSize: getResponsiveFontSize(context, fontSize: 13),
+    );
+  }
+  // SemiBold Font
   static TextStyle font28SemiBold(BuildContext context) {
     return TextStyle(
       fontWeight: FontWeightHelper.semiBold,

@@ -8,6 +8,7 @@ class ColorsManager {
   static const Color pink = Color(0xFFFE5C73);
   static const Color teal = Color(0xFF16DBCC);
   static const Color orange = Color(0xFFFFBB38);
+  static const Color darkOrange = Color(0xFFFC7900);
   static const Color borderSideColor = Color(0xFFDFEAF2);
 
   // Text Colors
