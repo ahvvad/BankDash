@@ -1,5 +1,6 @@
 import 'package:bankdash/dashboard/widgets/app_bar/custom_app_bar.dart';
 import 'package:bankdash/dashboard/widgets/dashboard_body/my_card_and_recent_trans_section.dart';
+import 'package:bankdash/dashboard/widgets/dashboard_body/weekly_activity_and_expense_statistics_section.dart';
 import 'package:flutter/material.dart';
 
 class DashboardBody extends StatelessWidget {
@@ -17,6 +18,8 @@ class DashboardBody extends StatelessWidget {
           child: Column(
             children: [
               MyCardAndRecentTransSection(),
+              SizedBox(height: 20),
+              WeeklyActivityAndExpenseStatisticsSection(),
             ],
           ),
         ),
@@ -24,3 +27,4 @@ class DashboardBody extends StatelessWidget {
     );
   }
 }
+

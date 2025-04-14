@@ -102,6 +102,12 @@ abstract class TextStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 11),
     );
   }
+  static TextStyle font13Regular(BuildContext context) {
+    return TextStyle(
+      fontWeight: FontWeightHelper.regular,
+      fontSize: getResponsiveFontSize(context, fontSize: 13),
+    );
+  }
 
   // Light Font
   static TextStyle font13light(BuildContext context) {
