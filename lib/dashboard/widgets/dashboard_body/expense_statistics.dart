@@ -1,5 +1,4 @@
 import 'package:bankdash/dashboard/widgets/dashboard_body/expense_statistics_chart.dart';
-import 'package:bankdash/dashboard/widgets/dashboard_body/expense_statistics_chart_title_list_vew.dart';
 import 'package:bankdash/dashboard/widgets/dashboard_body/titled_container.dart';
 import 'package:flutter/material.dart';
 
@@ -23,9 +22,8 @@ class ExpenseStatistics extends StatelessWidget {
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ExpenseStatisticsChartTitleListVew(),
                 ExpenseStatisticsChart(),
               ],
             ),
