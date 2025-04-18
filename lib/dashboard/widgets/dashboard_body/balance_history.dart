@@ -1,3 +1,4 @@
+import 'package:bankdash/dashboard/widgets/dashboard_body/blance_history_chart.dart';
 import 'package:bankdash/dashboard/widgets/dashboard_body/titled_container.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,11 @@ class BalanceHistory extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
           ),
-          child: const Center(child: Text('Balance History')),
+          child: const Padding(
+            padding: EdgeInsets.only(
+                right: 20.0, left: 20.0, bottom: 20.0, top: 30.0),
+            child: BalanceHistoryChart(),
+          ),
         ),
       ),
     );
