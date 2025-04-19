@@ -28,6 +28,7 @@ class QuickTransferItemsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double size = MediaQuery.sizeOf(context).height * 0.05;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,

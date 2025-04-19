@@ -10,12 +10,14 @@ abstract class TextStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 16),
     );
   }
+
   static TextStyle font13Bold(BuildContext context) {
     return TextStyle(
       fontWeight: FontWeightHelper.semiBold,
       fontSize: getResponsiveFontSize(context, fontSize: 13),
     );
   }
+
   // SemiBold Font
   static TextStyle font28SemiBold(BuildContext context) {
     return TextStyle(
@@ -116,6 +118,7 @@ abstract class TextStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 11),
     );
   }
+
   static TextStyle font13Regular(BuildContext context) {
     return TextStyle(
       fontWeight: FontWeightHelper.regular,
@@ -139,7 +142,9 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
-  double lowerLimit = fontSize * 1;
+  // ! The error was here: I had the lower value fixed, so the value didn't change during the calculation process.
+  //? I should have updated it in getScaleFactor().
+  double lowerLimit = fontSize * .8;
   double upperLimit = fontSize * 1.2;
 
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
@@ -150,9 +155,9 @@ double getScaleFactor(BuildContext context) {
 
   if (width < SizeConfig.tablet) {
     return width / 550;
-  } else if (width < SizeConfig.desktop) {
+  } else if (width < SizeConfig.tablet) {
     return width / 1000;
   } else {
-    return width / 1920;
+    return width / 1600;
   }
 }
