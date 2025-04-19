@@ -18,7 +18,7 @@ class QuickTransfer extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
           child: const Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

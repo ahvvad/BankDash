@@ -13,18 +13,22 @@ class QuickTransferItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double imageSize = (screenWidth * 0.05).clamp(30.0, 70.0);
+
     return Padding(
-      padding: const EdgeInsets.only(right: 15.0),
+      padding: const EdgeInsets.only(right: 10.0),
       child: Column(
         children: [
           Container(
-            height: 70,
-            width: 70,
+            height: imageSize,
+            width: imageSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
                   quickTransferModel.image,
                 ),
+                fit: BoxFit.cover,
               ),
               color: ColorsManager.bgColor,
               borderRadius: BorderRadius.circular(100),
