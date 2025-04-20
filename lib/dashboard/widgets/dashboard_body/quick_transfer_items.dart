@@ -14,7 +14,7 @@ class QuickTransferItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double imageSize = (screenWidth * 0.05).clamp(30.0, 70.0);
+    double imageSize = (screenWidth * 0.05).clamp(50.0, 70.0);
 
     return Padding(
       padding: const EdgeInsets.only(right: 10.0),

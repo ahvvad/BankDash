@@ -144,7 +144,7 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 
   // ! The error was here: I had the lower value fixed, so the value didn't change during the calculation process.
   //? I should have updated it in getScaleFactor().
-  double lowerLimit = fontSize * .8;
+  double lowerLimit = fontSize * .9;
   double upperLimit = fontSize * 1.2;
 
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
@@ -154,7 +154,7 @@ double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
 
   if (width < SizeConfig.tablet) {
-    return width / 550;
+    return width / 650;
   } else if (width < SizeConfig.tablet) {
     return width / 1000;
   } else {

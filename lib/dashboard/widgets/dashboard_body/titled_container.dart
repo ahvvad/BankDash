@@ -8,8 +8,10 @@ class TitledContainer extends StatelessWidget {
     required this.title,
     required this.child,
     this.columnAlignment,
+    this.secondrytTitle,
   });
   final String title;
+  final String? secondrytTitle;
   final Widget child;
   final CrossAxisAlignment? columnAlignment;
 
@@ -18,11 +20,22 @@ class TitledContainer extends StatelessWidget {
     return Column(
       crossAxisAlignment: columnAlignment ?? CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: TextStyles.font18SemiBold(context).copyWith(
-            color: ColorsManager.primaryTxtColor,
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: TextStyles.font18SemiBold(context).copyWith(
+                color: ColorsManager.primaryTxtColor,
+              ),
+            ),
+            Text(
+              secondrytTitle ?? '',
+              style: TextStyles.font18SemiBold(context).copyWith(
+                color: ColorsManager.primaryTxtColor,
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 16),
         Container(

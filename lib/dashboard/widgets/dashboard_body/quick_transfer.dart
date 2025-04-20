@@ -11,6 +11,7 @@ class QuickTransfer extends StatelessWidget {
     return Expanded(
       child: TitledContainer(
         title: 'Quick Transfer',
+        secondrytTitle: 'See All',
         child: Container(
           height: 220,
           decoration: BoxDecoration(
