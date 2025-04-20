@@ -1,10 +1,17 @@
 import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/views/dashboard_view.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const BankDash());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      backgroundColor: ColorsManager.bgColor,
+      builder: (context) => const BankDash(),
+    ),
+  );
 }
 
 class BankDash extends StatelessWidget {

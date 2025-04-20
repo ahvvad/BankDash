@@ -19,6 +19,9 @@ class MyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double svgIconSize = (screenWidth * .5).clamp(15.0, 25.0);
+
     final cardColor = isActive ? null : Colors.white;
     final gradient = isActive
         ? const LinearGradient(
@@ -76,7 +79,8 @@ class MyCard extends StatelessWidget {
                       ],
                     ),
                     Image.asset(
-                      height: 40,
+                      height: svgIconSize,
+                      width: svgIconSize,
                       AppImages.chipCardpng,
                       color: textColor,
                       fit: BoxFit.cover,
@@ -139,6 +143,8 @@ class MyCard extends StatelessWidget {
                         ),
                       ),
                       SvgPicture.asset(
+                        height: svgIconSize,
+                        width: svgIconSize,
                         AppImages.masterCard,
                         colorFilter: isActive
                             ? const ColorFilter.mode(
