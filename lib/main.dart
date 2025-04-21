@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       backgroundColor: ColorsManager.bgColor,
       builder: (context) => const BankDash(),
     ),

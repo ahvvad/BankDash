@@ -38,6 +38,7 @@ class QuickTransferItems extends StatelessWidget {
           Text(
             quickTransferModel.name,
             textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
             style: TextStyles.font16Regular(context).copyWith(
               color: ColorsManager.primaryTxtColor,
             ),
@@ -45,6 +46,7 @@ class QuickTransferItems extends StatelessWidget {
           Text(
             quickTransferModel.jobTitle,
             textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
             style: TextStyles.font15Regular(context).copyWith(
               color: ColorsManager.secondaryTxtColor,
             ),

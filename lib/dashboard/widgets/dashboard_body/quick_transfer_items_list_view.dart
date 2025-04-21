@@ -29,15 +29,13 @@ class QuickTransferItemsListView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: items
-                .map((e) => QuickTransferItems(
-                      quickTransferModel: e,
-                    ))
-                .toList(),
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: items
+              .map((e) => QuickTransferItems(
+                    quickTransferModel: e,
+                  ))
+              .toList(),
         ),
       ],
     );

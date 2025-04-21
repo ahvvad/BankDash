@@ -3,7 +3,7 @@ import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/utils/styles.dart';
 import 'package:bankdash/dashboard/widgets/dashboard_body/titled_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+// import 'package:flutter_svg/svg.dart';
 
 class MyCard extends StatelessWidget {
   final bool isActive;
@@ -146,18 +146,18 @@ class MyCard extends StatelessWidget {
                           color: textColor,
                         ),
                       ),
-                      SvgPicture.asset(
-                        height: svgIconSize,
-                        width: svgIconSize,
-                        AppImages.masterCard,
-                        colorFilter: isActive
-                            ? const ColorFilter.mode(
-                                ColorsManager.white,
-                                BlendMode.srcIn,
-                              )
-                            : null,
-                        fit: BoxFit.scaleDown,
-                      ),
+                      // SvgPicture.asset(
+                      //   height: svgIconSize,
+                      //   width: svgIconSize,
+                      //   AppImages.masterCard,
+                      //   colorFilter: isActive
+                      //       ? const ColorFilter.mode(
+                      //           ColorsManager.white,
+                      //           BlendMode.srcIn,
+                      //         )
+                      //       : null,
+                      //   fit: BoxFit.scaleDown,
+                      // ),
                     ],
                   ),
                 ),

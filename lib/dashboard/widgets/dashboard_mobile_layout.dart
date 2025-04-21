@@ -12,35 +12,43 @@ class DashboardMobileLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
-        child: Column(
-          children: [
-            Row(
-              children: [MobileLayoutCard()],
+      child: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: SizedBox(
+              width: double.infinity,
+              child: MobileLayoutCard(),
             ),
-            SizedBox(height: 20),
-            Row(
-              children: [RecentTransaction()],
+          ),
+          SizedBox(height: 20),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
+            child: Column(
+              children: [
+                Row(
+                  children: [RecentTransaction()],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  children: [WeeklyActivity()],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  children: [ExpenseStatistics()],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  children: [QuickTransfer()],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  children: [BalanceHistory()],
+                ),
+              ],
             ),
-            SizedBox(height: 20),
-            Row(
-              children: [WeeklyActivity()],
-            ),
-            SizedBox(height: 20),
-            Row(
-              children: [ExpenseStatistics()],
-            ),
-            SizedBox(height: 20),
-            Row(
-              children: [QuickTransfer()],
-            ),
-            SizedBox(height: 20),
-            Row(
-              children: [BalanceHistory()],
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
