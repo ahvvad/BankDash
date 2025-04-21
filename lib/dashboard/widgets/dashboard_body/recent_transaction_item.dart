@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:bankdash/dashboard/models/recent_transaction_model.dart';
 import 'package:bankdash/dashboard/utils/colors.dart';
 import 'package:bankdash/dashboard/utils/styles.dart';
@@ -14,16 +16,23 @@ class RecentTransactionItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double svgIconSize = (screenWidth * .5).clamp(30.0, 45.0);
     return Card(
       color: Colors.transparent,
       elevation: 0,
       child: Center(
         child: ListTile(
-          leading: CircleAvatar(
-            backgroundColor:
-                // ignore: deprecated_member_use
-                recentTransactionModel.backgroundColor.withOpacity(0.3),
-            child: SvgPicture.asset(recentTransactionModel.image),
+          
+          leading: Container(
+            width: svgIconSize,
+            height: svgIconSize,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(100),
+              color: recentTransactionModel.backgroundColor.withOpacity(0.3),
+            ),
+            child:
+                Center(child: SvgPicture.asset(recentTransactionModel.image)),
           ),
           title: Text(
             overflow: TextOverflow.fade,

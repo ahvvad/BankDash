@@ -20,7 +20,11 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double svgIconSize = (screenWidth * .5).clamp(15.0, 25.0);
+
+    /// This method is applied only on min width for tablet layout,
+    /// to fix the overflow issue for svg icons.
+    final upperLimit = (screenWidth >= 811 && screenWidth <= 848) ? 15.0 : 25.0;
+    double svgIconSize = (screenWidth * .5).clamp(15.0, upperLimit);
 
     final cardColor = isActive ? null : Colors.white;
     final gradient = isActive
@@ -148,7 +152,9 @@ class MyCard extends StatelessWidget {
                         AppImages.masterCard,
                         colorFilter: isActive
                             ? const ColorFilter.mode(
-                                ColorsManager.white, BlendMode.srcIn)
+                                ColorsManager.white,
+                                BlendMode.srcIn,
+                              )
                             : null,
                         fit: BoxFit.scaleDown,
                       ),
