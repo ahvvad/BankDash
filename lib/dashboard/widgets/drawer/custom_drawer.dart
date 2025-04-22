@@ -9,6 +9,8 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isMobile = screenWidth >= 810;
     return Container(
       decoration: const BoxDecoration(
         border: Border(
@@ -21,7 +23,7 @@ class CustomDrawer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 35.0, top: 30.0),
+            padding: EdgeInsets.only(left: 35.0, top: isMobile ? 30.0 : 50.0),
             child: SvgPicture.asset(AppImages.logo),
           ),
           const SizedBox(height: 10),

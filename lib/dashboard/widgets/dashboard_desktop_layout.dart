@@ -7,19 +7,16 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-      child: const Row(
-        children: [
-          Expanded(
-            child: CustomDrawer(),
-          ),
-          Expanded(
-            flex: 4,
-            child: DashboardBody(),
-          ),
-        ],
-      ),
+    return const Row(
+      children: [
+        Expanded(
+          child: CustomDrawer(),
+        ),
+        Expanded(
+          flex: 4,
+          child: DashboardBody(),
+        ),
+      ],
     );
   }
 }

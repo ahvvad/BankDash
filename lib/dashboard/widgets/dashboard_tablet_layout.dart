@@ -7,15 +7,21 @@ import 'package:bankdash/dashboard/widgets/dashboard_body/weekly_activity.dart';
 import 'package:flutter/material.dart';
 
 class DashboardTabletLayout extends StatelessWidget {
-  const DashboardTabletLayout({super.key});
+  const DashboardTabletLayout({
+    super.key,
+    this.onTap,
+  });
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
-          CustomAppBar(),
-          Padding(
+          CustomAppBar(
+            onTap: onTap ?? () {},
+          ),
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
             child: Column(
               children: [

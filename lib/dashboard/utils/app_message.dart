@@ -5,6 +5,8 @@ import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class CustomToast {
   static void showMessage(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isMobile = screenWidth >= 810;
     showTopSnackBar(
       Overlay.of(context),
       curve: Curves.fastEaseInToSlowEaseOut,
@@ -13,7 +15,7 @@ class CustomToast {
       Material(
         color: Colors.transparent,
         child: Align(
-          alignment: Alignment.bottomRight,
+          alignment: isMobile ? Alignment.bottomRight : Alignment.bottomCenter,
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             margin: const EdgeInsets.only(bottom: 20),
