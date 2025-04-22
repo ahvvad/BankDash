@@ -45,7 +45,7 @@ dependencies:
   # For native splash screen
   flutter_native_splash: ^2.4.4
   # For toast messages
-  fluttertoast: ^8.2.12
+  top_snackbar_flutter: ^3.2.0
 
 dev_dependencies:
   flutter_test:
@@ -96,4 +96,3 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
-

@@ -21,7 +21,8 @@ class CustomAppBar extends StatelessWidget {
             height: 80,
             decoration: const BoxDecoration(
               border: Border(
-                bottom: BorderSide(color: ColorsManager.borderSideColor, width: 1.5),
+                bottom: BorderSide(
+                    color: ColorsManager.borderSideColor, width: 1.5),
               ),
               color: Colors.white,
             ),
@@ -48,17 +49,19 @@ class CustomAppBar extends StatelessWidget {
                       const CustomSearshBar(),
                       const SizedBox(width: 30),
                       RoundedIconsContainer(
-                        onTap: () => CustomToast.showFeatureInDevelopment(),
+                        onTap: () => CustomToast.showMessage(context),
                         svgImage: AppImages.settings,
                       ),
                       const SizedBox(width: 30),
                       RoundedIconsContainer(
-                        onTap: () => CustomToast.showFeatureInDevelopment(),
+                        onTap: () => CustomToast.showMessage(
+                          context,
+                        ),
                         svgImage: AppImages.notification,
                       ),
                       const SizedBox(width: 30),
                       RoundedImageContainer(
-                          onTap: () => CustomToast.showFeatureInDevelopment(),
+                          onTap: () => CustomToast.showMessage(context),
                           image: AppImages.user1)
                     ],
                   )

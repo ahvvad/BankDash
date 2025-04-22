@@ -42,7 +42,7 @@ class QuickTrensferTextAmount extends StatelessWidget {
                   ),
                   Expanded(
                     child: GestureDetector(
-                      onTap: () => CustomToast.showFeatureInDevelopment(),
+                      onTap: () => CustomToast.showMessage(context),
                       child: Container(
                         height: containerHeight,
                         decoration: BoxDecoration(
